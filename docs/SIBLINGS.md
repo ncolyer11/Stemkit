@@ -10,6 +10,10 @@ So a roll can end up in one of three places:
 
 Identical siblings are rare, roughly 1 in 10,000 rolls. Shape-only siblings are about 100 times rarer than that again.
 
+![A warped and a crimson fungus grown from the same roll, seen from below, with matching shroomlights](img/sibling_biggest.png)
+
+The pair above is `sibling_biggest`: one roll, grown as warped (left) and crimson (right). They fill exactly the same blocks.
+
 Try one in game:
 
 ```

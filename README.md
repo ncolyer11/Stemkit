@@ -1,6 +1,6 @@
 # Stemkit
 
-A small Fabric mod for Minecraft 26.3 that grows huge Nether fungi from an exact RNG state, so a tree you found once can be grown again whenever you want. It has a catalogue of odd trees, all of ASCII written in shroomlights, and sibling trees: the same bone meal roll grown as warped and as crimson, which sometimes come out identical ([what that means](docs/SIBLINGS.md)).
+A small Fabric mod for Minecraft 26.3 that grows huge Nether fungi from an exact RNG state, so a tree you found once can be grown again whenever you want. It has all of ASCII written in shroomlights (from real bone-mealed trees too), a catalogue of interesting trees, and sibling trees: the same bone meal roll grown as warped and as crimson, which sometimes come out identical ([what that means](docs/SIBLINGS.md)).
 
 Every tree is grown by the game's own bone meal code (or its natural worldgen code), using the exact random state that made it. Glyph trees get turned (and the odd punctuation mark shifted) so they sit where they should, and that is the only change the mod makes to a tree.
 
