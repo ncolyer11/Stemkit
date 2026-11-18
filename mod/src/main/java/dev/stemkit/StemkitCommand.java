@@ -19,6 +19,7 @@ import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -163,14 +164,27 @@ public final class StemkitCommand {
 		return Targeting.defaultPos(c.getSource());
 	}
 
+	/** Colours for the /stemkit intro: the same softened warped and crimson as the tree list, a pale text colour, a dim separator. */
+	private static final int C_WARPED = 0x5FB8AE, C_CRIMSON = 0xC96A6A, C_SHROOM = 0xF7A44B, C_TEXT = 0xD6DCE6, C_DIM = 0x9AA3B2, C_TITLE = 0xC8D7F0;
+
+	private static MutableComponent tint(String text, int rgb) {
+		return Component.literal(text).withStyle(s -> s.withColor(rgb));
+	}
+
 	/** Plain /stemkit: who made it and the commands. */
 	private static int about(CommandSourceStack src) {
 		String version = net.fabricmc.loader.api.FabricLoader.getInstance().getModContainer("stemkit")
 			.map(m -> m.getMetadata().getVersion().getFriendlyString()).orElse("");
-		src.sendSuccess(() -> Component.literal("Stemkit " + version).withStyle(ChatFormatting.GOLD, ChatFormatting.BOLD)
-			.append(Component.literal("  made by ncolyer, with support from plamiasty").withStyle(ChatFormatting.GRAY)), false);
-		src.sendSuccess(() -> Component.literal("grow  sibling  char  message  seed  xray   (each shows its usage when run without arguments, grow lists the trees)")
-			.withStyle(ChatFormatting.GRAY), false);
+		src.sendSuccess(() -> tint("Stemkit " + version, C_SHROOM)
+			.append(tint("  made by ", C_TEXT)).append(tint("ncolyer", C_WARPED))
+			.append(tint(", with support from ", C_TEXT)).append(tint("plamiasty", C_CRIMSON)), false);
+		MutableComponent cmds = tint("/stemkit ", C_TITLE);
+		String[] names = {"grow", "sibling", "char", "message", "seed", "xray"};
+		for (int i = 0; i < names.length; i++) {
+			if (i > 0) cmds.append(tint(" | ", C_DIM));
+			cmds.append(tint(names[i], C_TEXT));
+		}
+		src.sendSuccess(() -> cmds, false);
 		return 1;
 	}
 
