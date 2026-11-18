@@ -1,0 +1,21 @@
+# build output
+build/
+.gradle/
+out/
+*.jar
+!**/gradle-wrapper.jar
+
+# editors
+.idea/
+.vscode/
+*.iml
+
+# local game folders and logs
+run/
+logs/
+*.log
+*.bak
+
+# nothing from the game itself belongs here
+src-dump/
+*.class

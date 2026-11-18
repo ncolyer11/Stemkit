@@ -1,0 +1,970 @@
+{
+ "modVersion": "1.3.3",
+ "_readme": [
+  "Glyph trees for /stemkit char | message (verified warped finds from the glyph sweep).",
+  "heading = compass direction to face so the glyph reads upright looking straight up at layer y+layerY; the mod rotates trees to face the player.",
+  "Written by a publish script from the search results; /reload in game picks up changes to the config copy."
+ ],
+ "glyphs": [
+  {
+   "id": "upper-41",
+   "set": "upper",
+   "ch": "A",
+   "name": "A",
+   "variant": "warped",
+   "s0": 236546886899549,
+   "layerY": 16,
+   "heading": "east"
+  },
+  {
+   "id": "upper-42",
+   "set": "upper",
+   "ch": "B",
+   "name": "B",
+   "variant": "warped",
+   "s0": 125148911696259,
+   "layerY": 8,
+   "heading": "west"
+  },
+  {
+   "id": "upper-43",
+   "set": "upper",
+   "ch": "C",
+   "name": "C",
+   "variant": "warped",
+   "s0": 162849602419723,
+   "layerY": 7,
+   "heading": "north"
+  },
+  {
+   "id": "upper-44",
+   "set": "upper",
+   "ch": "D",
+   "name": "D",
+   "variant": "warped",
+   "s0": 71447565451547,
+   "layerY": 6,
+   "heading": "west"
+  },
+  {
+   "id": "upper-45",
+   "set": "upper",
+   "ch": "E",
+   "name": "E",
+   "variant": "warped",
+   "s0": 123522351243471,
+   "layerY": 6,
+   "heading": "north"
+  },
+  {
+   "id": "upper-46",
+   "set": "upper",
+   "ch": "F",
+   "name": "F",
+   "variant": "warped",
+   "s0": 121370039438689,
+   "layerY": 6,
+   "heading": "south"
+  },
+  {
+   "id": "upper-47",
+   "set": "upper",
+   "ch": "G",
+   "name": "G",
+   "variant": "warped",
+   "s0": 212835424982088,
+   "layerY": 13,
+   "heading": "south"
+  },
+  {
+   "id": "upper-48",
+   "set": "upper",
+   "ch": "H",
+   "name": "H",
+   "variant": "warped",
+   "s0": 189024626085823,
+   "layerY": 7,
+   "heading": "north"
+  },
+  {
+   "id": "upper-49",
+   "set": "upper",
+   "ch": "I",
+   "name": "I",
+   "variant": "warped",
+   "s0": 33059673385061,
+   "layerY": 6,
+   "heading": "north"
+  },
+  {
+   "id": "upper-4a",
+   "set": "upper",
+   "ch": "J",
+   "name": "J",
+   "variant": "warped",
+   "s0": 272779008312724,
+   "layerY": 6,
+   "heading": "west"
+  },
+  {
+   "id": "upper-4b",
+   "set": "upper",
+   "ch": "K",
+   "name": "K",
+   "variant": "warped",
+   "s0": 189024626085823,
+   "layerY": 7,
+   "heading": "south"
+  },
+  {
+   "id": "upper-4c",
+   "set": "upper",
+   "ch": "L",
+   "name": "L",
+   "variant": "warped",
+   "s0": 90814009927608,
+   "layerY": 11,
+   "heading": "west"
+  },
+  {
+   "id": "upper-4d",
+   "set": "upper",
+   "ch": "M",
+   "name": "M",
+   "variant": "warped",
+   "s0": 91331205661629,
+   "layerY": 11,
+   "heading": "west"
+  },
+  {
+   "id": "upper-4e",
+   "set": "upper",
+   "ch": "N",
+   "name": "N",
+   "variant": "warped",
+   "s0": 248498942140784,
+   "layerY": 18,
+   "heading": "south"
+  },
+  {
+   "id": "upper-4f",
+   "set": "upper",
+   "ch": "O",
+   "name": "O",
+   "variant": "warped",
+   "s0": 75234144658667,
+   "layerY": 6,
+   "heading": "north"
+  },
+  {
+   "id": "upper-50",
+   "set": "upper",
+   "ch": "P",
+   "name": "P",
+   "variant": "warped",
+   "s0": 235083130366171,
+   "layerY": 8,
+   "heading": "north"
+  },
+  {
+   "id": "upper-51",
+   "set": "upper",
+   "ch": "Q",
+   "name": "Q",
+   "variant": "warped",
+   "s0": 57019664776897,
+   "layerY": 15,
+   "heading": "north"
+  },
+  {
+   "id": "upper-52",
+   "set": "upper",
+   "ch": "R",
+   "name": "R",
+   "variant": "warped",
+   "s0": 266657328358016,
+   "layerY": 6,
+   "heading": "south"
+  },
+  {
+   "id": "upper-53",
+   "set": "upper",
+   "ch": "S",
+   "name": "S",
+   "variant": "warped",
+   "s0": 188931502859227,
+   "layerY": 7,
+   "heading": "east"
+  },
+  {
+   "id": "upper-54",
+   "set": "upper",
+   "ch": "T",
+   "name": "T",
+   "variant": "warped",
+   "s0": 83403916999895,
+   "layerY": 14,
+   "heading": "east"
+  },
+  {
+   "id": "upper-55",
+   "set": "upper",
+   "ch": "U",
+   "name": "U",
+   "variant": "warped",
+   "s0": 183735676429775,
+   "layerY": 7,
+   "heading": "east"
+  },
+  {
+   "id": "upper-56",
+   "set": "upper",
+   "ch": "V",
+   "name": "V",
+   "variant": "warped",
+   "s0": 79130573894551,
+   "layerY": 13,
+   "heading": "north"
+  },
+  {
+   "id": "upper-57",
+   "set": "upper",
+   "ch": "W",
+   "name": "W",
+   "variant": "warped",
+   "s0": 91331205661629,
+   "layerY": 11,
+   "heading": "east"
+  },
+  {
+   "id": "upper-58",
+   "set": "upper",
+   "ch": "X",
+   "name": "X",
+   "variant": "warped",
+   "s0": 93514905739382,
+   "layerY": 7,
+   "heading": "north"
+  },
+  {
+   "id": "upper-59",
+   "set": "upper",
+   "ch": "Y",
+   "name": "Y",
+   "variant": "warped",
+   "s0": 16590242228687,
+   "layerY": 7,
+   "heading": "south"
+  },
+  {
+   "id": "upper-5a",
+   "set": "upper",
+   "ch": "Z",
+   "name": "Z",
+   "variant": "warped",
+   "s0": 108373019417867,
+   "layerY": 12,
+   "heading": "east"
+  },
+  {
+   "id": "lower-61",
+   "set": "lower",
+   "ch": "a",
+   "name": "a",
+   "variant": "warped",
+   "s0": 98925336451884,
+   "layerY": 6,
+   "heading": "north"
+  },
+  {
+   "id": "lower-62",
+   "set": "lower",
+   "ch": "b",
+   "name": "b",
+   "variant": "warped",
+   "s0": 12521435285596,
+   "layerY": 15,
+   "heading": "north"
+  },
+  {
+   "id": "lower-63",
+   "set": "lower",
+   "ch": "c",
+   "name": "c",
+   "variant": "warped",
+   "s0": 31836836737978,
+   "layerY": 6,
+   "heading": "west"
+  },
+  {
+   "id": "lower-64",
+   "set": "lower",
+   "ch": "d",
+   "name": "d",
+   "variant": "warped",
+   "s0": 235083130366171,
+   "layerY": 8,
+   "heading": "south"
+  },
+  {
+   "id": "lower-65",
+   "set": "lower",
+   "ch": "e",
+   "name": "e",
+   "variant": "warped",
+   "s0": 154408021772051,
+   "layerY": 14,
+   "heading": "south"
+  },
+  {
+   "id": "lower-66",
+   "set": "lower",
+   "ch": "f",
+   "name": "f",
+   "variant": "warped",
+   "s0": 259793461221018,
+   "layerY": 6,
+   "heading": "north"
+  },
+  {
+   "id": "lower-67",
+   "set": "lower",
+   "ch": "g",
+   "name": "g",
+   "variant": "warped",
+   "s0": 86787496022092,
+   "layerY": 7,
+   "heading": "south"
+  },
+  {
+   "id": "lower-68",
+   "set": "lower",
+   "ch": "h",
+   "name": "h",
+   "variant": "warped",
+   "s0": 78915243567262,
+   "layerY": 10,
+   "heading": "east"
+  },
+  {
+   "id": "lower-69",
+   "set": "lower",
+   "ch": "i",
+   "name": "i",
+   "variant": "warped",
+   "s0": 95434828006073,
+   "layerY": 10,
+   "heading": "east"
+  },
+  {
+   "id": "lower-6a",
+   "set": "lower",
+   "ch": "j",
+   "name": "j",
+   "variant": "warped",
+   "s0": 6401170739067,
+   "layerY": 6,
+   "heading": "east"
+  },
+  {
+   "id": "lower-6b",
+   "set": "lower",
+   "ch": "k",
+   "name": "k",
+   "variant": "warped",
+   "s0": 99350238161167,
+   "layerY": 10,
+   "heading": "east"
+  },
+  {
+   "id": "lower-6c",
+   "set": "lower",
+   "ch": "l",
+   "name": "l",
+   "variant": "warped",
+   "s0": 39059908987916,
+   "layerY": 20,
+   "heading": "north"
+  },
+  {
+   "id": "lower-6d",
+   "set": "lower",
+   "ch": "m",
+   "name": "m",
+   "variant": "warped",
+   "s0": 51381794864903,
+   "layerY": 6,
+   "heading": "north"
+  },
+  {
+   "id": "lower-6e",
+   "set": "lower",
+   "ch": "n",
+   "name": "n",
+   "variant": "warped",
+   "s0": 50873059874934,
+   "layerY": 7,
+   "heading": "east"
+  },
+  {
+   "id": "lower-6f",
+   "set": "lower",
+   "ch": "o",
+   "name": "o",
+   "variant": "warped",
+   "s0": 208827651834834,
+   "layerY": 6,
+   "heading": "north"
+  },
+  {
+   "id": "lower-70",
+   "set": "lower",
+   "ch": "p",
+   "name": "p",
+   "variant": "warped",
+   "s0": 190378093807840,
+   "layerY": 6,
+   "heading": "north"
+  },
+  {
+   "id": "lower-71",
+   "set": "lower",
+   "ch": "q",
+   "name": "q",
+   "variant": "warped",
+   "s0": 118636187640685,
+   "layerY": 7,
+   "heading": "east"
+  },
+  {
+   "id": "lower-72",
+   "set": "lower",
+   "ch": "r",
+   "name": "r",
+   "variant": "warped",
+   "s0": 176852320207663,
+   "layerY": 20,
+   "heading": "north"
+  },
+  {
+   "id": "lower-73",
+   "set": "lower",
+   "ch": "s",
+   "name": "s",
+   "variant": "warped",
+   "s0": 101437275456192,
+   "layerY": 6,
+   "heading": "north"
+  },
+  {
+   "id": "lower-74",
+   "set": "lower",
+   "ch": "t",
+   "name": "t",
+   "variant": "warped",
+   "s0": 189416889365338,
+   "layerY": 7,
+   "heading": "east"
+  },
+  {
+   "id": "lower-75",
+   "set": "lower",
+   "ch": "u",
+   "name": "u",
+   "variant": "warped",
+   "s0": 50873059874934,
+   "layerY": 7,
+   "heading": "west"
+  },
+  {
+   "id": "lower-76",
+   "set": "lower",
+   "ch": "v",
+   "name": "v",
+   "variant": "warped",
+   "s0": 31836836737978,
+   "layerY": 6,
+   "heading": "south"
+  },
+  {
+   "id": "lower-77",
+   "set": "lower",
+   "ch": "w",
+   "name": "w",
+   "variant": "warped",
+   "s0": 11608959536251,
+   "layerY": 7,
+   "heading": "east"
+  },
+  {
+   "id": "lower-78",
+   "set": "lower",
+   "ch": "x",
+   "name": "x",
+   "variant": "warped",
+   "s0": 140489911171704,
+   "layerY": 6,
+   "heading": "north"
+  },
+  {
+   "id": "lower-79",
+   "set": "lower",
+   "ch": "y",
+   "name": "y",
+   "variant": "warped",
+   "s0": 219535414675892,
+   "layerY": 6,
+   "heading": "south"
+  },
+  {
+   "id": "lower-7a",
+   "set": "lower",
+   "ch": "z",
+   "name": "z",
+   "variant": "warped",
+   "s0": 142946161453005,
+   "layerY": 20,
+   "heading": "east"
+  },
+  {
+   "id": "digit-30",
+   "set": "digit",
+   "ch": "0",
+   "name": "0",
+   "variant": "warped",
+   "s0": 254469140433649,
+   "layerY": 7,
+   "heading": "north"
+  },
+  {
+   "id": "digit-31",
+   "set": "digit",
+   "ch": "1",
+   "name": "1",
+   "variant": "warped",
+   "s0": 218408216838328,
+   "layerY": 6,
+   "heading": "north"
+  },
+  {
+   "id": "digit-32",
+   "set": "digit",
+   "ch": "2",
+   "name": "2",
+   "variant": "warped",
+   "s0": 102500166869610,
+   "layerY": 14,
+   "heading": "west"
+  },
+  {
+   "id": "digit-33",
+   "set": "digit",
+   "ch": "3",
+   "name": "3",
+   "variant": "warped",
+   "s0": 11608959536251,
+   "layerY": 7,
+   "heading": "north"
+  },
+  {
+   "id": "digit-34",
+   "set": "digit",
+   "ch": "4",
+   "name": "4",
+   "variant": "warped",
+   "s0": 37086866823929,
+   "layerY": 7,
+   "heading": "west"
+  },
+  {
+   "id": "digit-35",
+   "set": "digit",
+   "ch": "5",
+   "name": "5",
+   "variant": "warped",
+   "s0": 153073536701911,
+   "layerY": 16,
+   "heading": "east"
+  },
+  {
+   "id": "digit-36",
+   "set": "digit",
+   "ch": "6",
+   "name": "6",
+   "variant": "warped",
+   "s0": 220371890521698,
+   "layerY": 13,
+   "heading": "west"
+  },
+  {
+   "id": "digit-37",
+   "set": "digit",
+   "ch": "7",
+   "name": "7",
+   "variant": "warped",
+   "s0": 239323866574974,
+   "layerY": 15,
+   "heading": "west"
+  },
+  {
+   "id": "digit-38-full",
+   "set": "digit",
+   "ch": "8",
+   "name": "8",
+   "variant": "warped",
+   "s0": 246337002196838,
+   "layerY": 8,
+   "heading": "north",
+   "xform": 2
+  },
+  {
+   "id": "digit-39",
+   "set": "digit",
+   "ch": "9",
+   "name": "9",
+   "variant": "warped",
+   "s0": 220371890521698,
+   "layerY": 13,
+   "heading": "east"
+  },
+  {
+   "id": "punct-20",
+   "set": "punct",
+   "ch": " ",
+   "name": "space",
+   "variant": "warped",
+   "s0": 69978705690949,
+   "layerY": 6,
+   "heading": "north",
+   "manual": true,
+   "note": "friend's find: a fully solid 5x5 wart slab underside (24/24 + stem), nothing below, 0 shroomlights, 0 vines; Java-verified"
+  },
+  {
+   "id": "punct-21",
+   "set": "punct",
+   "ch": "!",
+   "name": "exclamation",
+   "variant": "warped",
+   "s0": 95434828006073,
+   "layerY": 10,
+   "heading": "west"
+  },
+  {
+   "id": "punct-22",
+   "set": "punct",
+   "ch": "\"",
+   "name": "quote",
+   "variant": "warped",
+   "s0": 181840026552996,
+   "layerY": 7,
+   "heading": "north"
+  },
+  {
+   "id": "punct-23-mid",
+   "set": "punct",
+   "ch": "#",
+   "name": "hash",
+   "variant": "warped",
+   "s0": 124229609643654,
+   "layerY": 7,
+   "heading": "east"
+  },
+  {
+   "id": "punct-24",
+   "set": "punct",
+   "ch": "$",
+   "name": "dollar",
+   "variant": "warped",
+   "s0": 158864307563192,
+   "layerY": 12,
+   "heading": "east"
+  },
+  {
+   "id": "punct-25",
+   "set": "punct",
+   "ch": "%",
+   "name": "percent",
+   "variant": "warped",
+   "s0": 44652775270912,
+   "layerY": 18,
+   "heading": "east"
+  },
+  {
+   "id": "punct-26",
+   "set": "punct",
+   "ch": "&",
+   "name": "ampersand",
+   "variant": "warped",
+   "s0": 27537151686935,
+   "layerY": 7,
+   "heading": "south"
+  },
+  {
+   "id": "punct-27",
+   "set": "punct",
+   "ch": "'",
+   "name": "apostrophe",
+   "variant": "warped",
+   "s0": 89753980980313,
+   "layerY": 7,
+   "heading": "east"
+  },
+  {
+   "id": "punct-28",
+   "set": "punct",
+   "ch": "(",
+   "name": "open_paren",
+   "variant": "warped",
+   "s0": 242242309437743,
+   "layerY": 16,
+   "heading": "west"
+  },
+  {
+   "id": "punct-29",
+   "set": "punct",
+   "ch": ")",
+   "name": "close_paren",
+   "variant": "warped",
+   "s0": 242242309437743,
+   "layerY": 16,
+   "heading": "east"
+  },
+  {
+   "id": "punct-2a",
+   "set": "punct",
+   "ch": "*",
+   "name": "asterisk",
+   "variant": "warped",
+   "s0": 139368573116337,
+   "layerY": 13,
+   "heading": "east"
+  },
+  {
+   "id": "punct-2b",
+   "set": "punct",
+   "ch": "+",
+   "name": "plus",
+   "variant": "warped",
+   "s0": 163307353773533,
+   "layerY": 6,
+   "heading": "north",
+   "xform": 2
+  },
+  {
+   "id": "punct-2c",
+   "set": "punct",
+   "ch": ",",
+   "name": "comma",
+   "variant": "warped",
+   "s0": 165384787894942,
+   "layerY": 7,
+   "heading": "north"
+  },
+  {
+   "id": "punct-2d",
+   "set": "punct",
+   "ch": "-",
+   "name": "minus",
+   "variant": "warped",
+   "s0": 111515453175299,
+   "layerY": 6,
+   "heading": "north"
+  },
+  {
+   "id": "punct-2e",
+   "set": "punct",
+   "ch": ".",
+   "name": "full_stop",
+   "variant": "warped",
+   "s0": 91304728751178,
+   "layerY": 6,
+   "heading": "north",
+   "xform": 3
+  },
+  {
+   "id": "punct-2f",
+   "set": "punct",
+   "ch": "/",
+   "name": "slash",
+   "variant": "warped",
+   "s0": 149727678613023,
+   "layerY": 14,
+   "heading": "east",
+   "xform": 2
+  },
+  {
+   "id": "punct-3a",
+   "set": "punct",
+   "ch": ":",
+   "name": "colon",
+   "variant": "warped",
+   "s0": 150633005095689,
+   "layerY": 6,
+   "heading": "east"
+  },
+  {
+   "id": "punct-3b",
+   "set": "punct",
+   "ch": ";",
+   "name": "semicolon",
+   "variant": "warped",
+   "s0": 33952988915541,
+   "layerY": 6,
+   "heading": "south"
+  },
+  {
+   "id": "punct-3c",
+   "set": "punct",
+   "ch": "<",
+   "name": "less_than",
+   "variant": "warped",
+   "s0": 217447391845063,
+   "layerY": 13,
+   "heading": "north"
+  },
+  {
+   "id": "punct-3d",
+   "set": "punct",
+   "ch": "=",
+   "name": "equals",
+   "variant": "warped",
+   "s0": 61190444773121,
+   "layerY": 7,
+   "heading": "east",
+   "xform": 2
+  },
+  {
+   "id": "punct-3e",
+   "set": "punct",
+   "ch": ">",
+   "name": "greater_than",
+   "variant": "warped",
+   "s0": 217447391845063,
+   "layerY": 13,
+   "heading": "south"
+  },
+  {
+   "id": "punct-3f",
+   "set": "punct",
+   "ch": "?",
+   "name": "question_mark",
+   "variant": "warped",
+   "s0": 90446731883719,
+   "layerY": 19,
+   "heading": "west"
+  },
+  {
+   "id": "punct-40",
+   "set": "punct",
+   "ch": "@",
+   "name": "at",
+   "variant": "warped",
+   "s0": 119380395366654,
+   "layerY": 6,
+   "heading": "east"
+  },
+  {
+   "id": "punct-5b",
+   "set": "punct",
+   "ch": "[",
+   "name": "open_bracket",
+   "variant": "warped",
+   "s0": 127200011568238,
+   "layerY": 7,
+   "heading": "north"
+  },
+  {
+   "id": "punct-5c",
+   "set": "punct",
+   "ch": "\\",
+   "name": "backslash",
+   "variant": "warped",
+   "s0": 149727678613023,
+   "layerY": 14,
+   "heading": "north",
+   "xform": 2
+  },
+  {
+   "id": "punct-5d",
+   "set": "punct",
+   "ch": "]",
+   "name": "close_bracket",
+   "variant": "warped",
+   "s0": 127200011568238,
+   "layerY": 7,
+   "heading": "south"
+  },
+  {
+   "id": "punct-5e",
+   "set": "punct",
+   "ch": "^",
+   "name": "caret",
+   "variant": "warped",
+   "s0": 17938076899874,
+   "layerY": 14,
+   "heading": "south"
+  },
+  {
+   "id": "punct-5f",
+   "set": "punct",
+   "ch": "_",
+   "name": "underscore",
+   "variant": "warped",
+   "s0": 188654894309175,
+   "layerY": 12,
+   "heading": "south"
+  },
+  {
+   "id": "punct-60",
+   "set": "punct",
+   "ch": "`",
+   "name": "backtick",
+   "variant": "warped",
+   "s0": 165384787894942,
+   "layerY": 7,
+   "heading": "east",
+   "xform": 2
+  },
+  {
+   "id": "punct-7b",
+   "set": "punct",
+   "ch": "{",
+   "name": "open_brace",
+   "variant": "warped",
+   "s0": 144538127998565,
+   "layerY": 6,
+   "heading": "west"
+  },
+  {
+   "id": "punct-7c",
+   "set": "punct",
+   "ch": "|",
+   "name": "pipe",
+   "variant": "warped",
+   "s0": 226184724940633,
+   "layerY": 9,
+   "heading": "north"
+  },
+  {
+   "id": "punct-7d",
+   "set": "punct",
+   "ch": "}",
+   "name": "close_brace",
+   "variant": "warped",
+   "s0": 144538127998565,
+   "layerY": 6,
+   "heading": "east"
+  },
+  {
+   "id": "punct-7e",
+   "set": "punct",
+   "ch": "~",
+   "name": "tilde",
+   "variant": "warped",
+   "s0": 209571672194048,
+   "layerY": 7,
+   "heading": "north",
+   "xform": 2
+  }
+ ]
+}

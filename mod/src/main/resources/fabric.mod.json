@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "stemkit",
+  "version": "${version}",
+  "name": "Stemkit",
+  "description": "/stemkit: grow a huge crimson/warped fungus with vanilla's own bone-meal code from a chosen level-RNG state (only trees vanilla can produce).",
+  "environment": "*",
+  "mixins": ["stemkit.mixins.json"],
+  "depends": { "fabricloader": ">=0.20.0", "minecraft": "26.3" }
+}
