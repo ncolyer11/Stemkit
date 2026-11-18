@@ -89,7 +89,7 @@ The glyph trees. Each one is a bone meal tree whose shroomlights spell a single 
 
 Every glyph tree is turned when it's placed so it reads the right way up for the direction you were facing when you ran the command. Face the way you want to walk along the line, run it, then walk under the trees looking up. Lines run away from you.
 
-Fourteen pairs of characters share a tree, because the same pattern reads as both depending on which way you look at it: W and M, i and !, H and K, 6 and 9 and so on. That makes 95 characters on 81 trees.
+Fourteen pairs of characters share a tree. Most are one shape turned around, so the same pattern reads as both depending on which way you look at it: W and M, P and d, 6 and 9, i and ! and so on. H and K are different: they only differ by one cell, and the trunk covers it, so one tree reads as either. That makes 95 characters on 81 trees.
 
 The letter A from the side, then from directly underneath:
 
