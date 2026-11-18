@@ -19,3 +19,8 @@ logs/
 # nothing from the game itself belongs here
 src-dump/
 *.class
+
+# search output (results and checkpoints), except the font
+research/out/*
+!research/out/glyph_targets.json
+__pycache__/

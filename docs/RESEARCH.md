@@ -2,7 +2,7 @@
 
 Two parts of Stemkit came out of one idea: the alphabet trees and the warped and crimson sibling pairs. If one number decides the whole tree, you can just try the numbers.
 
-The search code isn't in this repo. It re-implements the game's tree generation, and I'd rather not publish a copy of that. What's here is the method and the results.
+The scripts are in [research/](../research), and this page covers the method and the results.
 
 ## Why one number is enough
 

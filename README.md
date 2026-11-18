@@ -104,7 +104,7 @@ The glyph list works the same way in `config/stemkit/glyphs.json`.
 
 ## Where this came from
 
-The glyph trees came from a brute force search over every possible bone meal state. The sibling pairs came from the same kind of search over a small slice of the space. The method, the run time and the results are in [docs/RESEARCH.md](docs/RESEARCH.md).
+The glyph trees came from a brute force search over every possible bone meal state. The sibling pairs came from the same kind of search over a small slice of the space. The method, the run time and the results are in [docs/RESEARCH.md](docs/RESEARCH.md), and the search scripts are in [research/](research).
 
 ## Licence
 
