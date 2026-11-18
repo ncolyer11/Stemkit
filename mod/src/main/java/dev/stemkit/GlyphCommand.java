@@ -25,7 +25,7 @@ import net.minecraft.server.level.ServerLevel;
  * Glyph trees: bone-meal (planted) trees whose shroomlights draw a character in one hat layer, read from BELOW.
  *
  *   /stemkit char <glyph> [pos]     one glyph: a letter (case-sensitive), a digit or a punctuation name (e.g. question_mark)
- *   /stemkit char all [pos]     everything in four separate lines (lower, upper, digits, punctuation), gaps between them
+ *   /stemkit char ascii [pos]     everything in four separate lines (lower, upper, digits, punctuation), gaps between them
  *   /stemkit char all_alpha | ALL_ALPHA | all_num | all_punct [pos]    every lowercase / uppercase letter, digit, punctuation mark
  *   /stemkit message <text>                    the text as one straight line of trees
  *
@@ -88,7 +88,7 @@ public final class GlyphCommand {
 				.then(Commands.argument("pos", BlockPosArgument.blockPos())
 					.executes(c -> growOne(c.getSource(), BlockPosArgument.getLoadedBlockPos(c, "pos"), g))));
 		}
-		chr.then(allCmd("all", "everything"));      // four lines: lowercase, uppercase, digits, punctuation
+		chr.then(allCmd("ascii", "everything"));      // four lines: lowercase, uppercase, digits, punctuation
 		chr.then(allCmd("all_alpha", "lower"));     // every lowercase letter
 		chr.then(allCmd("ALL_ALPHA", "upper"));     // every uppercase letter
 		chr.then(allCmd("all_num", "numbers"));
@@ -139,7 +139,7 @@ public final class GlyphCommand {
 			.append(Component.literal("  letters: ").withStyle(ChatFormatting.GRAY)).append(Component.literal(letters.toString().trim()).withStyle(ChatFormatting.GOLD))
 			.append(Component.literal("  digits: ").withStyle(ChatFormatting.GRAY)).append(Component.literal(digits.toString().trim()).withStyle(ChatFormatting.GOLD)), false);
 		src.sendSuccess(() -> Component.literal("punctuation: ").withStyle(ChatFormatting.GRAY).append(Component.literal(marks.toString().trim()).withStyle(ChatFormatting.GOLD)), false);
-		src.sendSuccess(() -> Component.literal("/stemkit char <glyph> [pos] | all | all_alpha | ALL_ALPHA | all_num | all_punct   /stemkit message <text>").withStyle(ChatFormatting.GRAY), false);
+		src.sendSuccess(() -> Component.literal("/stemkit char <glyph> [pos] | ascii | all_alpha | ALL_ALPHA | all_num | all_punct   /stemkit message <text>").withStyle(ChatFormatting.GRAY), false);
 		return GLYPHS.size();
 	}
 

@@ -81,7 +81,7 @@ The glyph trees. Each one is a bone meal tree whose shroomlights spell a single 
 |---|---|
 | `/stemkit char` | Lists every available glyph. |
 | `/stemkit char <glyph> [pos]` | Grows one. A letter (case matters), a digit, or a punctuation name like `question_mark`, `full_stop` or `ampersand`. |
-| `/stemkit char all [pos]` | Everything, in four straight lines: lowercase, uppercase, digits, punctuation. There's a gap between the lines. |
+| `/stemkit char ascii [pos]` | Everything, in four straight lines: lowercase, uppercase, digits, punctuation. There's a gap between the lines. |
 | `/stemkit char all_alpha` | All lowercase letters in one line. |
 | `/stemkit char ALL_ALPHA` | All uppercase letters in one line. |
 | `/stemkit char all_num` | The digits. |
