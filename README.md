@@ -129,7 +129,7 @@ The glyph trees came from a brute force search over every possible bone meal sta
 
 ## Thanks
 
-Thanks to plamiasty, who found the 58 shroomlight tree this all started from, and to the person who later confirmed the 59.
+Thanks to plamiasty, who found the 58 shroomlight tree this all started from.
 
 ## Licence
 
