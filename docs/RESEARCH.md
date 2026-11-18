@@ -37,13 +37,36 @@ The odds are easy to estimate. A canvas needs the right cells lit and the other 
 
 ### The sweep
 
-The sweep ran on a single RTX 2070. Each GPU thread takes one starting state, plays the tree out, reads off the canvas layer and checks it against the table of glyph patterns. That's about 900 million trees a second, so one pass over all 1.1 x 10^14 states that pass the roll takes a day and a half. The whole run came to about 62 hours of GPU time, a bit under two passes.
+The sweep ran on a single RTX 2070. Each GPU thread takes one starting state, plays the tree out, reads off the canvas layer and checks it against the table of glyph patterns. Once it was tuned that came to just over a billion trees a second, so one pass over all 1.1 x 10^14 states that pass the roll takes a bit over a day. The whole run came to about 62 hours of GPU time, a bit under two passes, since it was slower early on.
 
 I checked it against a plain, slow reference version on the CPU, and the two agreed on every tree I compared. I also checked the counts. For each shape, the number of matches the sweep found should be close to what the odds predict, and for the shapes whose tallies covered the whole run they came out within a rounding error of the prediction. That's a decent sign the search isn't missing trees.
 
 ### Telling good trees from bad ones
 
-Finding a tree whose canvas reads "A" is the easy part. Most of them look bad. Each match gets a score. The trunk matters most: if it covers part of the letter the letter reads wrong, so a glyph that leaves the trunk's cell empty is best, and strokes touching the trunk's neighbours lose points too. Then the backdrop: a letter is easier to read against a solid wall of wart than against sky, so the cells around the strokes count for more when they're filled. Last, a shroomlight in a higher layer that shows through a gap in the letter spoils it, so those trees are thrown out. Only about 16% of canvas matches get past that.
+Finding a tree whose canvas reads "A" is the easy part. Most of them look bad, so every match gets a score made of three parts, compared in this order: the stem first, then the trunk clearance, then the backdrop. A better stem always beats a better trunk score, which always beats a better backdrop.
+
+**Stem quality.** The trunk comes up through the middle of the canvas, so the best glyphs don't use that cell at all.
+
+| Trunk cell is... | Points |
+|---|---|
+| not part of the glyph | 4 |
+| in the middle of a straight stroke | 2 |
+| at a junction (three or more neighbours) | 1 |
+| an endpoint, a bend or a lone dot | 0 |
+
+**Trunk clearance.** Starts at 20. Every stroke cell directly beside the trunk (up, down, left or right) costs 3, and every one touching it diagonally costs 2. A glyph that stays well away keeps all 20.
+
+**Backdrop.** A letter reads best against a solid wall of wart instead of sky. Each wart block that isn't part of the drawing is worth:
+
+| Wart block | Points |
+|---|---|
+| in the layer itself, next to a stroke (inside the 5x5 or in the outer ring around it) | 7 |
+| inside the 5x5, not next to a stroke | 2 |
+| in the outer ring, not next to a stroke | 0 |
+| one layer up, behind an empty cell of the glyph, next to a stroke | 3 |
+| one layer up, behind an empty cell, not next to a stroke | 1 |
+
+On top of that, a tree is thrown out if a shroomlight in a higher layer would show through a gap in the letter, since that spoils it. Only about 16% of canvas matches get past that check. The blank space is scored differently: its canvas must have no gap open to the sky, and then it just counts the wart behind it.
 
 The sweep keeps the best-scoring tree it has seen for every shape. I changed the scoring a few times along the way, which meant re-scoring the earlier part of the range, so the run is two passes over most of the space and one over the rest. The picks were swapped for better ones 288 times, nearly all in the first day and a half. For the last 18 hours nothing changed, and an extra pass done just to be sure found nothing new.
 
