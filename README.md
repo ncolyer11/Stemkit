@@ -92,7 +92,7 @@ Swaps the wart blocks near you for stained glass so you can see the shroomlights
 
 `/stemkit grow` lists about fifty trees. A few kinds of them:
 
-- **Record natural trees.** The 58 and 59 shroomlight warped trees (`warped_titan_58`, `warped_record_59`) and a few other finds from real 1.21.11 worlds, rebuilt from their world seed and position. Rebuilt in 26.3 they come out with the same counts, but the terrain around them in a real 26.3 world may differ. The odds of a natural tree reaching 58 are about 1 in 2.4 quadrillion. One 56 tree is listed but has no random state recorded, so it can't be grown.
+- **Record natural trees.** The 58 and 59 shroomlight warped trees (`warped_titan_58`, `warped_record_59`) and a few other finds from real 1.21.11 worlds, rebuilt from their world seed and position. Rebuilt in 26.3 they come out with the same counts, but the terrain around them in a real 26.3 world may differ. A natural tree has about a 1 in 2.4 quadrillion chance of reaching 58 shroomlights, and about 1 in 7.5 quadrillion of reaching 59.
 - **Search trees.** Two natural crimson trees with 44 and 45 shroomlights from a sampled search (`model_crimson_45`). They have no world, so they only show what the natural code makes from that state.
 - **Bone meal extremes.** The biggest hat (245 wart blocks), trees with 31 shroomlights, the tallest bare stem, the smallest possible tree.
 - **Odd shapes.** A pagoda, a table on four legs, a lollipop, a spiral staircase of shroomlights, a hat that is completely hollow, a wart cube. They're mostly named for what they look like.
