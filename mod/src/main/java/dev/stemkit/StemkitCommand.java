@@ -283,7 +283,22 @@ public final class StemkitCommand {
 	}
 
 	/** The one place a bone-meal tree is grown (used by `grow` and by `regrow` of planted dictionary entries). */
+	private static final org.slf4j.Logger LOG = com.mojang.logging.LogUtils.getLogger();
+
+	/** Grows the tree; any unexpected exception is logged in full and reported in chat instead of the vague vanilla message. */
 	static Grown growTree(ServerLevel level, BlockPos pos, boolean warped, long s0) {
+		try {
+			return growTreeInner(level, pos, warped, s0);
+		} catch (Throwable t) {
+			LOG.error("[stemkit] growing s0={} failed", s0, t);
+			StackTraceElement[] st = t.getStackTrace();
+			StringBuilder where = new StringBuilder();
+			for (int i = 0; i < Math.min(st.length, 4); i++) where.append(" < ").append(st[i].getClassName().replaceAll("^.*\\.", "")).append('.').append(st[i].getMethodName()).append(':').append(st[i].getLineNumber());
+			return new Grown("Internal error: " + t + where, 0, 0, 0, 0);
+		}
+	}
+
+	private static Grown growTreeInner(ServerLevel level, BlockPos pos, boolean warped, long s0) {
 		if (!level.isInsideBuildHeight(pos.below()) || !level.isInsideBuildHeight(pos.above(28))) {
 			return new Grown("Not enough room: need build height from y-1 to y+28.", 0, 0, 0, 0);
 		}
