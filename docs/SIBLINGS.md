@@ -22,7 +22,7 @@ The pair above is `sibling_biggest`: one roll, grown as warped (left) and crimso
 Try one in game:
 
 ```
-/stemkit sibling 59438334661301
+/stemkit sibling 69221
 ```
 
 That grows the roll as warped on the left and crimson on the right and tells you which of the three it is. The catalogue has a few of the best ones (`sibling_most_glow`, `sibling_biggest`, `sibling_glow_ratio`), and [RESEARCH.md](RESEARCH.md#sibling-trees) covers how they were found.
