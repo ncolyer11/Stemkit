@@ -168,7 +168,7 @@ public final class StemkitCommand {
 		String version = net.fabricmc.loader.api.FabricLoader.getInstance().getModContainer("stemkit")
 			.map(m -> m.getMetadata().getVersion().getFriendlyString()).orElse("");
 		src.sendSuccess(() -> Component.literal("Stemkit " + version).withStyle(ChatFormatting.GOLD, ChatFormatting.BOLD)
-			.append(Component.literal("  made by ncolyer, with help from plamiasty").withStyle(ChatFormatting.GRAY)), false);
+			.append(Component.literal("  made by ncolyer, with support from plamiasty").withStyle(ChatFormatting.GRAY)), false);
 		src.sendSuccess(() -> Component.literal("grow  sibling  char  message  seed  xray   (each shows its usage when run without arguments, grow lists the trees)")
 			.withStyle(ChatFormatting.GRAY), false);
 		return 1;
