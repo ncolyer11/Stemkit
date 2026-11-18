@@ -20,7 +20,7 @@ python sibling_gpu.py --minutes 30
 
 Results and the checkpoint go into `out/`. To stop the glyph sweep, create an empty file called `out/glyph_STOP`. Delete it and run the script again to carry on.
 
-`glyph_sweep.py` on a decent card does just over a billion trees a second, so a full pass is a day or two. `sibling_gpu.py` has a `--bench 20` option that runs a 20 second speed test without writing anything.
+`glyph_sweep.py` on a decent card does just over a billion trees a second, so a full pass takes a bit over a day. `sibling_gpu.py` has a `--bench 20` option that runs a 20 second speed test without writing anything.
 
 The `--validate` option of `sibling_gpu.py` compares against a separate reference implementation that isn't included here, so it won't work from this repo.
 
