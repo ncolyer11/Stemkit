@@ -389,7 +389,7 @@ public final class TreeDictionary {
 		return grown;
 	}
 
-	/** A planted tree whose seed fails the 40% bone meal roll grows nothing (like infinity_tree), so grow all leaves it out. */
+	/** A planted tree whose seed fails the 40% bone meal roll grows nothing (the very last seed is one), so grow all leaves it out. */
 	private static boolean failsBoneMealRoll(Tree t) {
 		if (!t.planted() || t.s0() == null) return false;
 		long s1 = (t.s0() * 0x5DEECE66DL + 11L) & ((1L << 48) - 1);

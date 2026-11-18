@@ -39,7 +39,7 @@ This is the main one. What it does depends on what you put after it.
 |---|---|
 | `/stemkit grow` | Lists every named tree, colour coded. Hover a name for details. Clicking one puts its command in your chat box and you press Enter. |
 | `/stemkit grow <name> [pos]` | Grows a named tree from the catalogue. |
-| `/stemkit grow all [pos]` | Grows every tree that has the data to be rebuilt, side by side in framed rows, with a sign by each one showing its name and seed. Seeds that grow nothing, like `infinity_tree`, are left out. |
+| `/stemkit grow all [pos]` | Grows every tree that has the data to be rebuilt, side by side in framed rows, with a sign by each one showing its name and seed. Seeds that fail the bone meal roll and would grow nothing are left out. |
 | `/stemkit grow <seed> [pos]` | Grows a warped fungus from a raw bone meal seed (see below). |
 | `/stemkit grow warped <seed> [pos]`<br>`/stemkit grow crimson <seed> [pos]` | Same, but you choose the variant. |
 
@@ -116,7 +116,7 @@ Swaps the wart blocks near you for stained glass so you can see the shroomlights
 - **Search trees.** Two natural crimson trees with 44 and 45 shroomlights from a sampled search (`model_crimson_45`). They have no world, so they only show what the natural code makes from that state.
 - **Bone meal extremes.** The biggest hat (245 wart blocks), trees with 31 shroomlights, the tallest bare stem, the smallest possible tree.
 - **Odd shapes.** A pagoda, a table on four legs, a lollipop, a spiral staircase of shroomlights, a hat that is completely hollow, a wart cube. They're mostly named for what they look like.
-- **The ends of the seed range.** `origin_tree` is the very first state, the origin tree. `infinity_tree` is the very last seed, which fails the bone meal roll and grows nothing, so running it is a small joke. The highest seed that does grow a tree is 281474976703958.
+- **The start of the seed range.** `origin_tree` is seed 0, the very first state of the generator.
 - **Siblings.** Warped and crimson pairs from one seed, for example `sibling_most_glow`.
 
 Each one has a short description. They live in `trees.json`. The first time the mod runs it copies that file to `config/stemkit/trees.json`, where you can add your own trees or edit the existing ones. Run `/reload` to pick up changes. A new jar version replaces your copy, and keeps the old one next to it as a `.bak` file.
