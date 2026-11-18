@@ -1,7 +1,7 @@
 {
   "_readme": [
       "Tree dictionary for /stemkit grow (no argument: the list), grow <name> [pos] and grow all. Edit freely, then /reload (or rebuild the jar to change the built-in default).",
-      "name : code name used in the commands (lowercase, letters/digits/_)",
+      "name : code name used in the commands (lowercase, letters/digits/_). Cannot be only digits, and cannot be all, warped or crimson, which grow uses itself.",
       "kind : natural | planted",
       "variant : crimson | warped | unknown (unknown = cannot be grown by name) | sibling (planted only: the s0 grown as warped AND crimson side by side, warped left)",
       "description, expectedShroomlights, expectedWart : shown in lists; grow compares its counts with the expected ones (expected* optional; the counts were computed with the repo's reference code)",

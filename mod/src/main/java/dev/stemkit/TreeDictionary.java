@@ -119,6 +119,11 @@ public final class TreeDictionary {
 					LOG.warn("[stemkit] {}: unknown kind '{}' (natural | planted), entry skipped", o.get("name"), kind);
 					continue;
 				}
+				if (RESERVED.contains(o.get("name").getAsString().toLowerCase())) {
+					// these are words the grow command already uses (grow all, grow warped <seed>, grow crimson <seed>)
+					LOG.warn("[stemkit] {}: a tree cannot be named all, warped or crimson (grow uses those words), entry skipped", o.get("name"));
+					continue;
+				}
 				if (o.get("name").getAsString().matches("[0-9]+")) {
 					// grow <number> is a raw seed, so a purely numeric tree name could never be reached by name
 					LOG.warn("[stemkit] {}: a tree name cannot be just digits (grow <number> grows that seed), entry skipped", o.get("name"));
@@ -150,6 +155,9 @@ public final class TreeDictionary {
 	private static Long optL(JsonObject o, String k) {
 		return o.has(k) ? o.get(k).getAsLong() : null;
 	}
+
+	/** Words the grow command uses itself, so no tree can take them as a name. */
+	private static final java.util.Set<String> RESERVED = java.util.Set.of("all", "warped", "crimson");
 
 	static void register(LiteralArgumentBuilder<CommandSourceStack> root) {
 		TREES = load();

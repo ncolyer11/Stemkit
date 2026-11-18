@@ -43,7 +43,7 @@ This is the main one. What it does depends on what you put after it.
 | `/stemkit grow <seed> [pos]` | Grows a warped fungus from a raw bone meal seed (see below). |
 | `/stemkit grow warped <seed> [pos]`<br>`/stemkit grow crimson <seed> [pos]` | Same, but you choose the variant. |
 
-Names are checked first. If what you typed isn't a name, it's treated as a seed. Tree names can't be made only of digits, so the two never clash.
+Names are checked first. If what you typed isn't a name, it's treated as a seed. Tree names can't be made only of digits, and `all`, `warped` and `crimson` are reserved, so none of these can clash. A catalogue entry with one of those names is skipped when the list loads, and the log says why.
 
 After growing a named tree the game prints its shroomlight and wart counts and says whether they match what was recorded. Matching counts is a good sign you got the right tree, though it only compares those two totals.
 
