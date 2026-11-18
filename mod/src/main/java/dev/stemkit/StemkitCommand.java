@@ -163,14 +163,12 @@ public final class StemkitCommand {
 		return Targeting.defaultPos(c.getSource());
 	}
 
-	/** Plain /stemkit: who made it, what it does, and the commands. */
+	/** Plain /stemkit: who made it and the commands. */
 	private static int about(CommandSourceStack src) {
 		String version = net.fabricmc.loader.api.FabricLoader.getInstance().getModContainer("stemkit")
 			.map(m -> m.getMetadata().getVersion().getFriendlyString()).orElse("");
 		src.sendSuccess(() -> Component.literal("Stemkit " + version).withStyle(ChatFormatting.GOLD, ChatFormatting.BOLD)
-			.append(Component.literal("  made by ncolyer11").withStyle(ChatFormatting.GRAY)), false);
-		src.sendSuccess(() -> Component.literal("Grows huge Nether fungi from an exact RNG seed: rare trees, ASCII in shroomlights, and warped/crimson sibling pairs.")
-			.withStyle(ChatFormatting.WHITE), false);
+			.append(Component.literal("  made by ncolyer, with help from plamiasty").withStyle(ChatFormatting.GRAY)), false);
 		src.sendSuccess(() -> Component.literal("grow  sibling  char  message  seed  xray   (each shows its usage when run without arguments, grow lists the trees)")
 			.withStyle(ChatFormatting.GRAY), false);
 		return 1;

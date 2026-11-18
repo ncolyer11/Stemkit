@@ -9,11 +9,9 @@ So a roll can end up in one of three places:
 
 - **Different.** The trees split early and look nothing alike. This is nearly every roll.
 - **Sibling (same shape).** Both trees fill exactly the same blocks, stem and hat, but some of the wart and shroomlights can differ. Vines are ignored.
-- **Identical sibling.** Same shape, and also wart and shroomlights in exactly the same places. The only thing that changes is which block types they're made of. These come in two flavours:
-  - **Twins.** Nothing differs at all. The random stream never split, so the two trees are the same tree in two colours.
-  - **Identical, but the crimson one has vines.** The only visible difference is some vines dangling from the crimson hat. That means the random stream did split (a vine started and drew extra numbers), but the draws after that happened to build the same tree anyway, by pure chance.
+- **Identical sibling.** Same shape, and also wart and shroomlights in exactly the same places. The only thing that changes is which block types they're made of.
 
-Identical siblings are rare, roughly 1 in 10,000 rolls. About 8 in 100 of them are the vine kind, which works out to roughly 1 in 125,000 rolls, and the rest are perfect twins. Siblings that match in shape but differ in wart or shroomlights are about 100 times rarer than identical ones, around 1 in a million. The vine figure comes from a sample of 5.8 million rolls, so treat it as approximate.
+Identical siblings are rare, roughly 1 in 10,000 rolls. Siblings that match in shape but differ in wart or shroomlights are about 100 times rarer than that, around 1 in a million.
 
 ![A warped and a crimson fungus grown from the same roll, seen from below, with matching shroomlights](img/sibling_biggest.png)
 

@@ -29,7 +29,7 @@ Where the tree goes: if you're looking at a block within reach, the tree grows o
 
 ## Commands
 
-Run `/stemkit` on its own to see the version, a one line description and the list of commands.
+Run `/stemkit` on its own to see the version, who made it and the list of commands.
 
 ### `/stemkit grow`
 
