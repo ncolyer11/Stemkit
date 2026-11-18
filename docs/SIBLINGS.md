@@ -1,6 +1,9 @@
 # Sibling trees
 
-Warped and crimson fungi grow with almost the same code. If you bone meal a warped fungus and a crimson fungus while the game's random generator is in the same state, the two trees start out the same: same height, same hat width, same layers. They only drift apart when crimson draws one extra random number that warped doesn't. That happens when crimson places certain extra hat blocks and when one of its vines actually starts hanging.
+Warped and crimson fungi grow with almost the same code. If you bone meal a warped fungus and a crimson fungus while the game's random generator is in the same state, the two trees start out the same: same height, same hat width, same layers. They only drift apart when crimson draws a random number that warped doesn't, and that happens in two places:
+
+- **The lowest three layers of the hat.** Cells on the outer ring get a hat block for free if there's already one underneath, and otherwise a 15% chance. Both variants place exactly the same blocks here, but every time the 15% roll succeeds, crimson draws one more number to decide whether a vine might hang from it. Warped skips that draw. It happens whether or not a vine ever appears, and it shifts every random number after it.
+- **Higher up.** Both variants roll the vine chance the same way (warped's is just zero), so they stay in step until a crimson vine actually starts hanging. That needs the roll to hit and the block below to be empty, and then crimson draws more numbers.
 
 So a roll can end up in one of three places:
 
