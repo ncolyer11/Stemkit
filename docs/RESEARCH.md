@@ -72,11 +72,11 @@ The sweep keeps the best-scoring tree it has seen for every shape. I changed the
 
 ### What came out
 
-All 95 characters have a tree. The typical pick has about 91% of the backdrop it could possibly have for its trunk position. The best (the colon) hits 96.7% and the worst (the at sign) 76%. Of the 94 glyphs I scored (the blank space isn't scored), 78 keep the trunk entirely out of the drawing.
+All 95 characters have a tree. The typical pick has about 91% of the backdrop it could possibly have for its trunk position. The best (the colon) hits 96.7% and the worst (`@`) 76%. Of the 94 glyphs I scored (the blank space isn't scored), 78 keep the trunk entirely out of the drawing.
 
 ![Backdrop score of every pick, as a share of the best possible](img/pick_quality.png)
 
-The blank space is a tree a friend found, whose hat is solid underneath so nothing shows through.
+The blank space is a tree plamiasty found, whose hat is solid underneath so nothing shows through.
 
 ## Sibling trees
 
@@ -108,11 +108,4 @@ The best ones are in the mod's catalogue: the pair with the most shroomlights (1
 
 Player-grown trees are never "huge" in the thick-stem sense. That needs natural generation. With bone meal the realistic ceiling for shroomlights in a tree is about 35, and the best I found in an early crimson sweep (about 2% of the space) was 32. The most in the catalogue is 31.
 
-Natural trees go much higher. A friend found a warped tree with 58 shroomlights and later another with 59. Natural trees follow the same sort of odds but there are a lot of them: I worked out the exact distribution of shroomlight counts and 58 comes out at about 1 in 2.4 quadrillion per tree. Sampling 7 billion natural trees by random seed topped out at 45, which is about what I'd expect. Beating 58 would take a real world seed search, with proper terrain and biome generation, and that's not something I've attempted.
-
-## What I haven't checked
-
-- The searches assume a flat floor and open air around the tree. Terrain and neighbouring blocks can change what gets placed.
-- The 7x7 and 9x9 columns the mod clears are what the search assumed. Real worlds will have things in the way.
-- I assume nothing else in the game draws from the level random during the tree growing. I read the code and don't think anything does, but I haven't proven it in game.
-- Getting a survival world into a particular starting state is a separate problem, and this repo doesn't solve it.
+Natural trees go much higher. plamiasty found a warped tree with 58 shroomlights, and someone else later confirmed a 59. Natural trees follow the same sort of odds but there are a lot of them: I worked out the exact distribution of shroomlight counts and 58 comes out at about 1 in 2.4 quadrillion per tree. Sampling 7 billion natural trees by random seed topped out at 45, which is about what I'd expect. Beating 59 would take a real world seed search, with proper terrain and biome generation, and that's not something I've attempted.

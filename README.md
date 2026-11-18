@@ -127,6 +127,10 @@ The glyph list works the same way in `config/stemkit/glyphs.json`.
 
 The glyph trees came from a brute force search over every possible bone meal state. The sibling pairs came from the same kind of search over a small slice of the space. The method, the run time and the results are in [docs/RESEARCH.md](docs/RESEARCH.md), and the search scripts are in [research/](research).
 
+## Thanks
+
+Thanks to plamiasty, who found the 58 shroomlight tree this all started from, and to the person who later confirmed the 59.
+
 ## Licence
 
 MIT. See [LICENSE](LICENSE).
