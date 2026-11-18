@@ -194,7 +194,8 @@ public final class TreeDictionary {
 	 * click puts the regrow command in the chat box (trees without RNG data are listed but cannot be regrown).
 	 */
 	private static int list(CommandSourceStack src) {
-		src.sendSuccess(() -> Component.literal(TREES.size() + " trees").withStyle(ChatFormatting.WHITE, ChatFormatting.BOLD)
+		final long shown = TREES.stream().filter(t -> !failsBoneMealRoll(t)).count();   // seeds that grow nothing stay out of the list
+		src.sendSuccess(() -> Component.literal(shown + " trees").withStyle(ChatFormatting.WHITE, ChatFormatting.BOLD)
 			.append(Component.literal("   hover a name for details, click it to grow").withStyle(ChatFormatting.GRAY)), false);
 		src.sendSuccess(() -> Component.literal("Key: ").withStyle(ChatFormatting.GRAY)
 			.append(Component.literal("■ crimson  ").withStyle(s -> s.withColor(CRIMSON)))
@@ -208,7 +209,7 @@ public final class TreeDictionary {
 			{"model", "Natural trees from simulation (no world location)"},
 			{"planted", "Bone-meal trees (player-grown)"}};
 		for (String[] g : groups) {
-			List<Tree> ts = new ArrayList<>(TREES.stream().filter(t -> t.tag().equals(g[0])).toList());
+			List<Tree> ts = new ArrayList<>(TREES.stream().filter(t -> t.tag().equals(g[0]) && !failsBoneMealRoll(t)).toList());
 			if (ts.isEmpty()) continue;
 			ts.sort((a, b) -> a.name().compareTo(b.name()));
 			src.sendSuccess(() -> Component.literal(g[1]).withStyle(s -> s.withColor(TITLE).withBold(true).withUnderlined(true)), false);
@@ -228,7 +229,7 @@ public final class TreeDictionary {
 				src.sendSuccess(() -> line, false);
 			}
 		}
-		return TREES.size();
+		return (int) shown;
 	}
 
 	/** Natural trees: the WorldgenRandom exactly as the feature gets it (derived, recorded or model state; see class comment). */
