@@ -175,9 +175,11 @@ public final class StemkitCommand {
 	private static int about(CommandSourceStack src) {
 		String version = net.fabricmc.loader.api.FabricLoader.getInstance().getModContainer("stemkit")
 			.map(m -> m.getMetadata().getVersion().getFriendlyString()).orElse("");
-		src.sendSuccess(() -> tint("Stemkit " + version, C_SHROOM).withStyle(ChatFormatting.BOLD)
-			.append(tint("  made by ", C_TEXT).withStyle(ChatFormatting.ITALIC)).append(tint("ncolyer", C_WARPED).withStyle(ChatFormatting.ITALIC))
-			.append(tint(", with support from ", C_TEXT).withStyle(ChatFormatting.ITALIC)).append(tint("plamiasty", C_CRIMSON).withStyle(ChatFormatting.ITALIC)), false);
+		src.sendSuccess(() -> tint("Stemkit " + version, C_SHROOM).withStyle(ChatFormatting.BOLD), false);
+		src.sendSuccess(() -> tint("made by ", C_TEXT).withStyle(ChatFormatting.ITALIC)
+			.append(tint("ncolyer", C_WARPED).withStyle(ChatFormatting.ITALIC))
+			.append(tint(", with support from ", C_TEXT).withStyle(ChatFormatting.ITALIC))
+			.append(tint("plamiasty", C_CRIMSON).withStyle(ChatFormatting.ITALIC)), false);
 		MutableComponent cmds = tint("/stemkit ", C_TITLE);
 		String[] names = {"grow", "sibling", "char", "message", "seed", "xray"};
 		for (int i = 0; i < names.length; i++) {
