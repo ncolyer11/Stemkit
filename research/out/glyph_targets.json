@@ -1,0 +1,1464 @@
+{
+ "_readme": [
+  "Glyph targets for the warped glyph sweep, from the glyph editor (hand-painted) plus fallbacks.",
+  "tier 1 = everything normal (incl. the minimal 8); 5 = full 8; 6 = @; 7 = small #; 8 = big # (last, probably impossible).",
+  "rows: 5x5, # = shroomlight stroke, . = not a shroomlight; centre cell = stem wildcard. lock = position is fixed as painted."
+ ],
+ "glyphs": [
+  {
+   "id": "upper-41",
+   "set": "upper",
+   "ch": "A",
+   "name": "A",
+   "rows": [
+    "..#..",
+    ".#.#.",
+    ".###.",
+    ".#.#.",
+    ".#.#."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "upper-42",
+   "set": "upper",
+   "ch": "B",
+   "name": "B",
+   "rows": [
+    ".##..",
+    ".#.#.",
+    ".##..",
+    ".#.#.",
+    ".##.."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "upper-43",
+   "set": "upper",
+   "ch": "C",
+   "name": "C",
+   "rows": [
+    "..##.",
+    ".#...",
+    ".#...",
+    ".#...",
+    "..##."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "upper-44",
+   "set": "upper",
+   "ch": "D",
+   "name": "D",
+   "rows": [
+    ".##..",
+    ".#.#.",
+    ".#.#.",
+    ".#.#.",
+    ".##.."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "upper-45",
+   "set": "upper",
+   "ch": "E",
+   "name": "E",
+   "rows": [
+    ".###.",
+    ".#...",
+    ".###.",
+    ".#...",
+    ".###."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "upper-46",
+   "set": "upper",
+   "ch": "F",
+   "name": "F",
+   "rows": [
+    ".###.",
+    ".#...",
+    ".###.",
+    ".#...",
+    ".#..."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "upper-47",
+   "set": "upper",
+   "ch": "G",
+   "name": "G",
+   "rows": [
+    "..##.",
+    ".#...",
+    ".#.#.",
+    ".#.#.",
+    "..##."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "upper-48",
+   "set": "upper",
+   "ch": "H",
+   "name": "H",
+   "rows": [
+    ".#.#.",
+    ".#.#.",
+    ".###.",
+    ".#.#.",
+    ".#.#."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "upper-49",
+   "set": "upper",
+   "ch": "I",
+   "name": "I",
+   "rows": [
+    ".###.",
+    "..#..",
+    "..#..",
+    "..#..",
+    ".###."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "upper-4a",
+   "set": "upper",
+   "ch": "J",
+   "name": "J",
+   "rows": [
+    "...#.",
+    "...#.",
+    "...#.",
+    ".#.#.",
+    "..#.."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "upper-4b",
+   "set": "upper",
+   "ch": "K",
+   "name": "K",
+   "rows": [
+    ".#.#.",
+    ".#.#.",
+    ".##..",
+    ".#.#.",
+    ".#.#."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "upper-4c",
+   "set": "upper",
+   "ch": "L",
+   "name": "L",
+   "rows": [
+    ".#...",
+    ".#...",
+    ".#...",
+    ".#...",
+    ".###."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "upper-4d",
+   "set": "upper",
+   "ch": "M",
+   "name": "M",
+   "rows": [
+    "#...#",
+    "##.##",
+    "#.#.#",
+    "#...#",
+    "#...#"
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "upper-4e",
+   "set": "upper",
+   "ch": "N",
+   "name": "N",
+   "rows": [
+    "#..#.",
+    "##.#.",
+    "#.##.",
+    "#..#.",
+    "#..#."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "upper-4f",
+   "set": "upper",
+   "ch": "O",
+   "name": "O",
+   "rows": [
+    ".###.",
+    ".#.#.",
+    ".#.#.",
+    ".#.#.",
+    ".###."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "upper-50",
+   "set": "upper",
+   "ch": "P",
+   "name": "P",
+   "rows": [
+    ".##..",
+    ".#.#.",
+    ".##..",
+    ".#...",
+    ".#..."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "upper-51",
+   "set": "upper",
+   "ch": "Q",
+   "name": "Q",
+   "rows": [
+    "..#..",
+    ".#.#.",
+    ".#.#.",
+    ".##..",
+    "..##."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "upper-52",
+   "set": "upper",
+   "ch": "R",
+   "name": "R",
+   "rows": [
+    ".##..",
+    ".#.#.",
+    ".##..",
+    ".#.#.",
+    ".#.#."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "upper-53",
+   "set": "upper",
+   "ch": "S",
+   "name": "S",
+   "rows": [
+    "..##.",
+    ".#...",
+    "..#..",
+    "...#.",
+    ".##.."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "upper-54",
+   "set": "upper",
+   "ch": "T",
+   "name": "T",
+   "rows": [
+    ".###.",
+    "..#..",
+    "..#..",
+    "..#..",
+    "..#.."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "upper-55",
+   "set": "upper",
+   "ch": "U",
+   "name": "U",
+   "rows": [
+    ".#.#.",
+    ".#.#.",
+    ".#.#.",
+    ".#.#.",
+    ".###."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "upper-56",
+   "set": "upper",
+   "ch": "V",
+   "name": "V",
+   "rows": [
+    ".#.#.",
+    ".#.#.",
+    ".#.#.",
+    ".#.#.",
+    "..#.."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "upper-57",
+   "set": "upper",
+   "ch": "W",
+   "name": "W",
+   "rows": [
+    "#...#",
+    "#...#",
+    "#.#.#",
+    "##.##",
+    "#...#"
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "upper-58",
+   "set": "upper",
+   "ch": "X",
+   "name": "X",
+   "rows": [
+    ".#.#.",
+    ".#.#.",
+    "..#..",
+    ".#.#.",
+    ".#.#."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "upper-59",
+   "set": "upper",
+   "ch": "Y",
+   "name": "Y",
+   "rows": [
+    ".#.#.",
+    ".#.#.",
+    "..#..",
+    "..#..",
+    "..#.."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "upper-5a",
+   "set": "upper",
+   "ch": "Z",
+   "name": "Z",
+   "rows": [
+    ".###.",
+    "...#.",
+    "..#..",
+    ".#...",
+    ".###."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "lower-61",
+   "set": "lower",
+   "ch": "a",
+   "name": "a",
+   "rows": [
+    ".....",
+    "..##.",
+    ".#.#.",
+    "..##.",
+    "....."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "lower-62",
+   "set": "lower",
+   "ch": "b",
+   "name": "b",
+   "rows": [
+    ".#...",
+    ".#...",
+    ".##..",
+    ".#.#.",
+    ".##.."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "lower-63",
+   "set": "lower",
+   "ch": "c",
+   "name": "c",
+   "rows": [
+    ".....",
+    "..##.",
+    ".#...",
+    "..##.",
+    "....."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "lower-64",
+   "set": "lower",
+   "ch": "d",
+   "name": "d",
+   "rows": [
+    "...#.",
+    "...#.",
+    "..##.",
+    ".#.#.",
+    "..##."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "lower-65",
+   "set": "lower",
+   "ch": "e",
+   "name": "e",
+   "rows": [
+    "..##.",
+    ".###.",
+    ".#...",
+    "..##.",
+    "....."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "lower-66",
+   "set": "lower",
+   "ch": "f",
+   "name": "f",
+   "rows": [
+    "..##.",
+    ".#...",
+    ".###.",
+    ".#...",
+    ".#..."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "lower-67",
+   "set": "lower",
+   "ch": "g",
+   "name": "g",
+   "rows": [
+    "..##.",
+    ".#.#.",
+    "..##.",
+    "...#.",
+    ".##.."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "lower-68",
+   "set": "lower",
+   "ch": "h",
+   "name": "h",
+   "rows": [
+    ".#...",
+    ".#...",
+    ".##..",
+    ".#.#.",
+    ".#.#."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "lower-69",
+   "set": "lower",
+   "ch": "i",
+   "name": "i",
+   "rows": [
+    "..#..",
+    ".....",
+    "..#..",
+    "..#..",
+    "..#.."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "lower-6a",
+   "set": "lower",
+   "ch": "j",
+   "name": "j",
+   "rows": [
+    "...#.",
+    ".....",
+    "...#.",
+    ".#.#.",
+    "..#.."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "lower-6b",
+   "set": "lower",
+   "ch": "k",
+   "name": "k",
+   "rows": [
+    ".#...",
+    ".#...",
+    ".#.#.",
+    ".##..",
+    ".#.#."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "lower-6c",
+   "set": "lower",
+   "ch": "l",
+   "name": "l",
+   "rows": [
+    ".#...",
+    ".#...",
+    ".#...",
+    ".#...",
+    "..#.."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "lower-6d",
+   "set": "lower",
+   "ch": "m",
+   "name": "m",
+   "rows": [
+    ".....",
+    "##.#.",
+    "#.#.#",
+    "#.#.#",
+    "....."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "lower-6e",
+   "set": "lower",
+   "ch": "n",
+   "name": "n",
+   "rows": [
+    ".....",
+    ".##..",
+    ".#.#.",
+    ".#.#.",
+    "....."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "lower-6f",
+   "set": "lower",
+   "ch": "o",
+   "name": "o",
+   "rows": [
+    ".....",
+    ".###.",
+    ".#.#.",
+    ".###.",
+    "....."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "lower-70",
+   "set": "lower",
+   "ch": "p",
+   "name": "p",
+   "rows": [
+    ".##..",
+    ".#.#.",
+    ".##..",
+    ".#...",
+    "....."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "lower-71",
+   "set": "lower",
+   "ch": "q",
+   "name": "q",
+   "rows": [
+    "..##.",
+    ".#.#.",
+    "..##.",
+    "...##",
+    "...#."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "lower-72",
+   "set": "lower",
+   "ch": "r",
+   "name": "r",
+   "rows": [
+    ".....",
+    "..##.",
+    ".#...",
+    ".#...",
+    ".#..."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "lower-73",
+   "set": "lower",
+   "ch": "s",
+   "name": "s",
+   "rows": [
+    ".....",
+    "..##.",
+    "..#..",
+    ".##..",
+    "....."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "lower-74",
+   "set": "lower",
+   "ch": "t",
+   "name": "t",
+   "rows": [
+    "..#..",
+    ".###.",
+    "..#..",
+    "..##.",
+    "....."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "lower-75",
+   "set": "lower",
+   "ch": "u",
+   "name": "u",
+   "rows": [
+    ".....",
+    ".#.#.",
+    ".#.#.",
+    "..##.",
+    "....."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "lower-76",
+   "set": "lower",
+   "ch": "v",
+   "name": "v",
+   "rows": [
+    ".....",
+    ".#.#.",
+    ".#.#.",
+    "..#..",
+    "....."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "lower-77",
+   "set": "lower",
+   "ch": "w",
+   "name": "w",
+   "rows": [
+    ".....",
+    "#...#",
+    "#.#.#",
+    ".#.#.",
+    "....."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "lower-78",
+   "set": "lower",
+   "ch": "x",
+   "name": "x",
+   "rows": [
+    ".....",
+    ".#.#.",
+    "..#..",
+    ".#.#.",
+    "....."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "lower-79",
+   "set": "lower",
+   "ch": "y",
+   "name": "y",
+   "rows": [
+    ".#.#.",
+    ".#.#.",
+    "..##.",
+    "...#.",
+    ".##.."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "lower-7a",
+   "set": "lower",
+   "ch": "z",
+   "name": "z",
+   "rows": [
+    ".....",
+    ".##..",
+    "..#..",
+    "..##.",
+    "....."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "digit-30",
+   "set": "digit",
+   "ch": "0",
+   "name": "0",
+   "rows": [
+    "..#..",
+    ".#.#.",
+    ".#.#.",
+    ".#.#.",
+    "..#.."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "digit-31",
+   "set": "digit",
+   "ch": "1",
+   "name": "1",
+   "rows": [
+    "..#..",
+    ".##..",
+    "..#..",
+    "..#..",
+    ".###."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "digit-32",
+   "set": "digit",
+   "ch": "2",
+   "name": "2",
+   "rows": [
+    ".##..",
+    "...#.",
+    "..#..",
+    ".#...",
+    ".###."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "digit-33",
+   "set": "digit",
+   "ch": "3",
+   "name": "3",
+   "rows": [
+    ".##..",
+    "...#.",
+    "..#..",
+    "...#.",
+    ".##.."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "digit-34",
+   "set": "digit",
+   "ch": "4",
+   "name": "4",
+   "rows": [
+    ".#.#.",
+    ".#.#.",
+    ".###.",
+    "...#.",
+    "...#."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "digit-35",
+   "set": "digit",
+   "ch": "5",
+   "name": "5",
+   "rows": [
+    ".###.",
+    ".#...",
+    ".###.",
+    "...#.",
+    ".###."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "digit-36",
+   "set": "digit",
+   "ch": "6",
+   "name": "6",
+   "rows": [
+    ".###.",
+    ".#...",
+    ".###.",
+    ".#.#.",
+    ".###."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "digit-37",
+   "set": "digit",
+   "ch": "7",
+   "name": "7",
+   "rows": [
+    ".###.",
+    "...#.",
+    "..#..",
+    "..#..",
+    "..#.."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "digit-39",
+   "set": "digit",
+   "ch": "9",
+   "name": "9",
+   "rows": [
+    ".###.",
+    ".#.#.",
+    ".###.",
+    "...#.",
+    ".###."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "punct-7e",
+   "set": "punct",
+   "ch": "~",
+   "name": "tilde",
+   "rows": [
+    ".....",
+    ".#...",
+    "#.#.#",
+    "...#.",
+    "....."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "punct-60",
+   "set": "punct",
+   "ch": "`",
+   "name": "backtick",
+   "rows": [
+    ".....",
+    ".#...",
+    "..#..",
+    ".....",
+    "....."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "punct-20",
+   "set": "punct",
+   "ch": " ",
+   "name": "space",
+   "rows": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    "....."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "punct-21",
+   "set": "punct",
+   "ch": "!",
+   "name": "exclamation",
+   "rows": [
+    "..#..",
+    "..#..",
+    "..#..",
+    ".....",
+    "..#.."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "punct-24",
+   "set": "punct",
+   "ch": "$",
+   "name": "dollar",
+   "rows": [
+    "..##.",
+    ".#...",
+    ".###.",
+    "...#.",
+    ".##.."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "punct-25",
+   "set": "punct",
+   "ch": "%",
+   "name": "percent",
+   "rows": [
+    ".#.#.",
+    "...#.",
+    "..#..",
+    ".#...",
+    ".#.#."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "punct-5e",
+   "set": "punct",
+   "ch": "^",
+   "name": "caret",
+   "rows": [
+    ".....",
+    "..#..",
+    ".#.#.",
+    ".....",
+    "....."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "punct-26",
+   "set": "punct",
+   "ch": "&",
+   "name": "ampersand",
+   "rows": [
+    ".#...",
+    "#.#..",
+    ".#.#.",
+    "#.#..",
+    ".#.#."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "punct-2a",
+   "set": "punct",
+   "ch": "*",
+   "name": "asterisk",
+   "rows": [
+    ".....",
+    "#.#.#",
+    ".###.",
+    "#.#.#",
+    "....."
+   ],
+   "lock": true,
+   "tier": 1
+  },
+  {
+   "id": "punct-28",
+   "set": "punct",
+   "ch": "(",
+   "name": "open_paren",
+   "rows": [
+    "..#..",
+    ".#...",
+    ".#...",
+    ".#...",
+    "..#.."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "punct-29",
+   "set": "punct",
+   "ch": ")",
+   "name": "close_paren",
+   "rows": [
+    ".#...",
+    "..#..",
+    "..#..",
+    "..#..",
+    ".#..."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "punct-5f",
+   "set": "punct",
+   "ch": "_",
+   "name": "underscore",
+   "rows": [
+    ".....",
+    ".....",
+    ".....",
+    ".....",
+    ".###."
+   ],
+   "lock": true,
+   "tier": 1
+  },
+  {
+   "id": "punct-2b",
+   "set": "punct",
+   "ch": "+",
+   "name": "plus",
+   "rows": [
+    ".....",
+    "..#..",
+    ".###.",
+    "..#..",
+    "....."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "punct-2d",
+   "set": "punct",
+   "ch": "-",
+   "name": "minus",
+   "rows": [
+    ".....",
+    ".....",
+    ".###.",
+    ".....",
+    "....."
+   ],
+   "lock": true,
+   "tier": 1
+  },
+  {
+   "id": "punct-3d",
+   "set": "punct",
+   "ch": "=",
+   "name": "equals",
+   "rows": [
+    ".....",
+    ".###.",
+    ".....",
+    ".###.",
+    "....."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "punct-7b",
+   "set": "punct",
+   "ch": "{",
+   "name": "open_brace",
+   "rows": [
+    "..##.",
+    "..#..",
+    ".##..",
+    "..#..",
+    "..##."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "punct-7d",
+   "set": "punct",
+   "ch": "}",
+   "name": "close_brace",
+   "rows": [
+    ".##..",
+    "..#..",
+    "..##.",
+    "..#..",
+    ".##.."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "punct-7c",
+   "set": "punct",
+   "ch": "|",
+   "name": "pipe",
+   "rows": [
+    "..#..",
+    "..#..",
+    "..#..",
+    "..#..",
+    "..#.."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "punct-5b",
+   "set": "punct",
+   "ch": "[",
+   "name": "open_bracket",
+   "rows": [
+    ".##..",
+    ".#...",
+    ".#...",
+    ".#...",
+    ".##.."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "punct-5d",
+   "set": "punct",
+   "ch": "]",
+   "name": "close_bracket",
+   "rows": [
+    ".##..",
+    "..#..",
+    "..#..",
+    "..#..",
+    ".##.."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "punct-5c",
+   "set": "punct",
+   "ch": "\\",
+   "name": "backslash",
+   "rows": [
+    ".....",
+    ".#...",
+    "..#..",
+    "...#.",
+    "....."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "punct-3b",
+   "set": "punct",
+   "ch": ";",
+   "name": "semicolon",
+   "rows": [
+    "..#..",
+    ".....",
+    "..#..",
+    ".#...",
+    "....."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "punct-27",
+   "set": "punct",
+   "ch": "'",
+   "name": "apostrophe",
+   "rows": [
+    ".....",
+    "..#..",
+    "..#..",
+    ".....",
+    "....."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "punct-3a",
+   "set": "punct",
+   "ch": ":",
+   "name": "colon",
+   "rows": [
+    ".....",
+    "..#..",
+    ".....",
+    "..#..",
+    "....."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "punct-22",
+   "set": "punct",
+   "ch": "\"",
+   "name": "quote",
+   "rows": [
+    ".....",
+    ".#.#.",
+    ".#.#.",
+    ".....",
+    "....."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "punct-2c",
+   "set": "punct",
+   "ch": ",",
+   "name": "comma",
+   "rows": [
+    ".....",
+    "..#..",
+    ".#...",
+    ".....",
+    "....."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "punct-2e",
+   "set": "punct",
+   "ch": ".",
+   "name": "full_stop",
+   "rows": [
+    ".....",
+    ".....",
+    "..#..",
+    ".....",
+    "....."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "punct-2f",
+   "set": "punct",
+   "ch": "/",
+   "name": "slash",
+   "rows": [
+    ".....",
+    "...#.",
+    "..#..",
+    ".#...",
+    "....."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "punct-3c",
+   "set": "punct",
+   "ch": "<",
+   "name": "less_than",
+   "rows": [
+    "...#.",
+    "..#..",
+    ".#...",
+    "..#..",
+    "...#."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "punct-3e",
+   "set": "punct",
+   "ch": ">",
+   "name": "greater_than",
+   "rows": [
+    ".#...",
+    "..#..",
+    "...#.",
+    "..#..",
+    ".#..."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "punct-3f",
+   "set": "punct",
+   "ch": "?",
+   "name": "question_mark",
+   "rows": [
+    ".##..",
+    "...#.",
+    "..#..",
+    ".....",
+    "..#.."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "digit-38",
+   "set": "digit",
+   "ch": "8",
+   "name": "8",
+   "rows": [
+    "..#..",
+    ".#.#.",
+    "..#..",
+    ".#.#.",
+    "..#.."
+   ],
+   "lock": false,
+   "tier": 1
+  },
+  {
+   "id": "digit-38-full",
+   "set": "digit",
+   "ch": "8",
+   "name": "8",
+   "rows": [
+    ".###.",
+    ".#.#.",
+    ".###.",
+    ".#.#.",
+    ".###."
+   ],
+   "lock": false,
+   "tier": 5
+  },
+  {
+   "id": "punct-40",
+   "set": "punct",
+   "ch": "@",
+   "name": "at",
+   "rows": [
+    ".###.",
+    "#..#.",
+    "#.##.",
+    "#.##.",
+    "#...."
+   ],
+   "lock": false,
+   "tier": 6
+  },
+  {
+   "id": "punct-23",
+   "set": "punct",
+   "ch": "#",
+   "name": "hash",
+   "rows": [
+    ".#.#.",
+    ".###.",
+    ".#.#.",
+    ".###.",
+    ".#.#."
+   ],
+   "lock": false,
+   "tier": 7
+  },
+  {
+   "id": "punct-23-mid",
+   "set": "punct",
+   "ch": "#",
+   "name": "hash",
+   "rows": [
+    "#.#..",
+    "####.",
+    "#.#..",
+    "####.",
+    "....."
+   ],
+   "lock": false,
+   "tier": 8
+  }
+ ]
+}

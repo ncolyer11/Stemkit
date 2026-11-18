@@ -1,7 +1,7 @@
 # build output
 build/
 .gradle/
-out/
+mod/out/
 *.jar
 !**/gradle-wrapper.jar
 
