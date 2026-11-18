@@ -2,6 +2,6 @@
   "required": true,
   "package": "dev.stemkit.mixin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": ["CommandsMixin"],
+  "mixins": ["CommandsMixin", "HugeFungusFeatureMixin", "LegacyRandomSourceAccessor", "WorldgenRandomAccessor"],
   "injectors": { "defaultRequire": 1 }
 }

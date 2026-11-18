@@ -29,6 +29,8 @@ Where the tree goes: if you're looking at a block within reach, the tree grows o
 
 ## Commands
 
+Run `/stemkit` on its own to see the version, a one line description and the list of commands.
+
 ### `/stemkit grow`
 
 This is the main one. What it does depends on what you put after it.
@@ -54,6 +56,22 @@ For natural trees (the ones that generate in the world) the catalogue stores the
 Grows the same seed twice, warped on the left and crimson on the right, and compares them block by block, ignoring vines. It tells you if they are identical, the same shape, or different.
 
 Most seeds give two trees that split early and look nothing alike. Roughly 1 in 10,000 gives an identical sibling pair, the same down to the shroomlights. [This page](docs/SIBLINGS.md) explains the difference between siblings and identical siblings. See the research notes for why.
+
+### `/stemkit seed`
+
+Tells you the random state of a tree you've just seen grow, and saves it in the format `trees.json` uses, so you can add it to the catalogue.
+
+| Command | What it does |
+|---|---|
+| `/stemkit seed` | The tree nearest to you (within 48 blocks) that the mod saw growing. |
+| `/stemkit seed last` | The most recent bone meal tree, wherever it is. |
+
+The game doesn't remember a tree's seed, so the mod watches fungi as they grow and notes the state at that moment. That means:
+
+- **Bone meal (or a dispenser):** works for any tree grown while the mod is loaded. You get the seed, and `/stemkit grow warped <seed>` (or `crimson`) grows it again.
+- **Natural trees:** only caught while their chunk is first generated with the mod installed, so walk into fresh Nether chunks and then run the command next to a tree. Trees in chunks that already existed can't be recovered. You get the world seed, the position and the generator's state, which is enough to rebuild the tree. Only the last few thousand are remembered, and nothing survives a restart.
+
+The command saves the entry to `config/stemkit/captured_trees.json`, and the chat message has a link that copies it. Paste the entry into the `trees` list in `config/stemkit/trees.json`, give it a better name and a description if you like, and `/reload`. The new tree then shows up in `/stemkit grow`.
 
 ### `/stemkit char`
 

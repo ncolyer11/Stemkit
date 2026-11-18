@@ -318,7 +318,13 @@ public final class TreeDictionary {
 		}
 		ResourceKey<Feature> key = warped ? TreeFeatures.WARPED_FUNGUS : TreeFeatures.CRIMSON_FUNGUS;
 		Holder<Feature> feature = level.registryAccess().lookupOrThrow(Registries.FEATURE).getOrThrow(key);
-		boolean placed = feature.value().place(level, level.getChunkSource().getGenerator(), stateAtPlace(t), pos);
+		boolean placed;
+		TreeCapture.SELF.set(true);
+		try {
+			placed = feature.value().place(level, level.getChunkSource().getGenerator(), stateAtPlace(t), pos);
+		} finally {
+			TreeCapture.SELF.set(false);
+		}
 		int[] n = count(level, pos, 4, 30, warped);
 		boolean m = placed && matches(n[0], t.expectedShroom()) && matches(n[1], t.expectedWart());
 		return new Outcome(true, m, desc + (placed ? " regrown: " : " - feature refused to place: ") + cmp(n[0], t.expectedShroom(), "shroomlights")

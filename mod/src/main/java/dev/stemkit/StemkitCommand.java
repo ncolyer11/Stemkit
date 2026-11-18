@@ -50,7 +50,8 @@ public final class StemkitCommand {
 
 	public static void register(CommandDispatcher<CommandSourceStack> dispatcher) {
 		LiteralArgumentBuilder<CommandSourceStack> root = Commands.literal("stemkit")
-			.requires(Commands.hasPermission(Commands.LEVEL_GAMEMASTERS));
+			.requires(Commands.hasPermission(Commands.LEVEL_GAMEMASTERS))
+			.executes(c -> about(c.getSource()));
 
 		LiteralArgumentBuilder<CommandSourceStack> growCmd = Commands.literal("grow");
 		for (boolean warped : new boolean[] {false, true}) {
@@ -70,11 +71,16 @@ public final class StemkitCommand {
 					LongArgumentType.getLong(c, "s0")))));
 		root.then(growCmd);
 
+		// seed: the random state of the nearest tree (or `seed last` for the latest bone meal tree), saved as a trees.json entry
+		root.then(Commands.literal("seed")
+			.executes(c -> TreeCapture.command(c, false))
+			.then(Commands.literal("last").executes(c -> TreeCapture.command(c, true))));
+
 		root.then(Commands.literal("sibling")
 			.executes(c -> {
 				c.getSource().sendSuccess(() -> Component.literal("/stemkit sibling <seed> [pos]").withStyle(ChatFormatting.WHITE), false);
 				c.getSource().sendSuccess(() -> Component.literal("Grows the seed as warped (left) and crimson (right) and compares them, vines ignored. "
-					+ "Seed is a whole number from 0 to 281474976710655. Try 59438334661301 for an identical pair.").withStyle(ChatFormatting.GRAY), false);
+					+ "Seed is a whole number from 0 to 281474976710655. Try 69221 for an identical pair.").withStyle(ChatFormatting.GRAY), false);
 				return 0;
 			})
 			.then(Commands.argument("s0", LongArgumentType.longArg(0L, MASK48))
@@ -155,6 +161,19 @@ public final class StemkitCommand {
 
 	private static BlockPos feet(CommandContext<CommandSourceStack> c) {
 		return Targeting.defaultPos(c.getSource());
+	}
+
+	/** Plain /stemkit: who made it, what it does, and the commands. */
+	private static int about(CommandSourceStack src) {
+		String version = net.fabricmc.loader.api.FabricLoader.getInstance().getModContainer("stemkit")
+			.map(m -> m.getMetadata().getVersion().getFriendlyString()).orElse("");
+		src.sendSuccess(() -> Component.literal("Stemkit " + version).withStyle(ChatFormatting.GOLD, ChatFormatting.BOLD)
+			.append(Component.literal("  made by ncolyer11").withStyle(ChatFormatting.GRAY)), false);
+		src.sendSuccess(() -> Component.literal("Grows huge Nether fungi from an exact RNG seed: rare trees, ASCII in shroomlights, and warped/crimson sibling pairs.")
+			.withStyle(ChatFormatting.WHITE), false);
+		src.sendSuccess(() -> Component.literal("grow  sibling  char  message  seed  xray   (each shows its usage when run without arguments, grow lists the trees)")
+			.withStyle(ChatFormatting.GRAY), false);
+		return 1;
 	}
 
 	/** Result of growing one bone-meal tree: failure message (null on success) and the block counts. */
