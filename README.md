@@ -39,7 +39,7 @@ This is the main one. What it does depends on what you put after it.
 |---|---|
 | `/stemkit grow` | Lists every named tree, colour coded. Hover a name for details. Clicking one puts its command in your chat box and you press Enter. |
 | `/stemkit grow <name> [pos]` | Grows a named tree from the catalogue. |
-| `/stemkit grow all [pos]` | Grows every tree that has the data to be rebuilt, side by side in framed rows, with a sign by each one showing its name and seed. |
+| `/stemkit grow all [pos]` | Grows every tree that has the data to be rebuilt, side by side in framed rows, with a sign by each one showing its name and seed. Seeds that grow nothing, like `infinity_tree`, are left out. |
 | `/stemkit grow <seed> [pos]` | Grows a warped fungus from a raw bone meal seed (see below). |
 | `/stemkit grow warped <seed> [pos]`<br>`/stemkit grow crimson <seed> [pos]` | Same, but you choose the variant. |
 

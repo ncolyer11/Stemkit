@@ -357,7 +357,7 @@ public final class TreeDictionary {
 			return 0;
 		}
 		List<Tree> planted = new ArrayList<>(), natural = new ArrayList<>(), siblings = new ArrayList<>();
-		for (Tree t : TREES) if (t.canRegrow()) (t.sibling() ? siblings : t.planted() ? planted : natural).add(t);
+		for (Tree t : TREES) if (t.canRegrow() && !failsBoneMealRoll(t)) (t.sibling() ? siblings : t.planted() ? planted : natural).add(t);
 		planted.sort((a, b) -> a.name().compareTo(b.name()));
 		natural.sort((a, b) -> a.name().compareTo(b.name()));
 		siblings.sort((a, b) -> a.name().compareTo(b.name()));
@@ -387,6 +387,13 @@ public final class TreeDictionary {
 		src.sendSuccess(() -> Component.literal("Grew " + grown + " trees.").withStyle(ChatFormatting.GREEN), true);
 		for (String b : bad) src.sendFailure(Component.literal(b));
 		return grown;
+	}
+
+	/** A planted tree whose seed fails the 40% bone meal roll grows nothing (like infinity_tree), so grow all leaves it out. */
+	private static boolean failsBoneMealRoll(Tree t) {
+		if (!t.planted() || t.s0() == null) return false;
+		long s1 = (t.s0() * 0x5DEECE66DL + 11L) & ((1L << 48) - 1);
+		return (s1 >>> 24) >= 6710887L;
 	}
 
 	/** regrow all: trees per row, and empty blocks between rows. */
