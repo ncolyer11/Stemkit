@@ -116,6 +116,7 @@ Swaps the wart blocks near you for stained glass so you can see the shroomlights
 - **Search trees.** Two natural crimson trees with 44 and 45 shroomlights from a sampled search (`model_crimson_45`). They have no world, so they only show what the natural code makes from that state.
 - **Bone meal extremes.** The biggest hat (245 wart blocks), trees with 31 shroomlights, the tallest bare stem, the smallest possible tree.
 - **Odd shapes.** A pagoda, a table on four legs, a lollipop, a spiral staircase of shroomlights, a hat that is completely hollow, a wart cube. They're mostly named for what they look like.
+- **The ends of the seed range.** `seed_zero` is the very first state, the origin tree. `seed_infinity` is the last one that grows: the highest seed overall fails the bone meal roll, so it's the highest that works.
 - **Siblings.** Warped and crimson pairs from one seed, for example `sibling_most_glow`.
 
 Each one has a short description. They live in `trees.json`. The first time the mod runs it copies that file to `config/stemkit/trees.json`, where you can add your own trees or edit the existing ones. Run `/reload` to pick up changes. A new jar version replaces your copy, and keeps the old one next to it as a `.bak` file.
