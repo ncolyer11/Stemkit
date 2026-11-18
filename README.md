@@ -2,7 +2,7 @@
 
 A small Fabric mod for Minecraft 26.3 that grows huge Nether fungi from an exact RNG state, so a tree you found once can be grown again whenever you want. It has all of ASCII written in shroomlights (from real bone-mealed trees too), a catalogue of interesting trees, and sibling trees: the same bone meal roll grown as warped and as crimson, which sometimes come out identical ([what that means](docs/SIBLINGS.md)).
 
-Every tree is grown by the game's own bone meal code (or its natural worldgen code), using the exact random state that made it. Glyph trees get turned (and the odd punctuation mark shifted) so they sit where they should, and that is the only change the mod makes to a tree.
+Every tree is grown by the game's own bone meal code (or its natural worldgen code), using the exact random state that made it. Glyph trees get turned (and the odd punctuation mark shifted) so they sit where they should, and, apart from `xray`, that is the only change the mod makes to a tree.
 
 ![Every glyph tree, from directly under the trunk looking straight up](docs/img/glyphs.png)
 
@@ -29,7 +29,7 @@ Where the tree goes: if you're looking at a block within reach, the tree grows o
 
 ## Commands
 
-Run `/stemkit` on its own to see the version, who made it and the list of commands.
+Run `/stemkit` on its own to see the version, who made it and the list of commands. `grow` and `char` list what they can grow when you run them with nothing after them, and `sibling` and `message` print a short usage.
 
 ### `/stemkit grow`
 
@@ -55,7 +55,7 @@ For natural trees (the ones that generate in the world) the catalogue stores the
 
 Grows the same seed twice, warped on the left and crimson on the right, and compares them block by block, ignoring vines. It tells you if they are identical, the same shape, or different.
 
-Most seeds give two trees that split early and look nothing alike. Roughly 1 in 10,000 gives an identical sibling pair, the same down to the shroomlights. [This page](docs/SIBLINGS.md) explains the difference between siblings and identical siblings. See the research notes for why.
+Most seeds give two trees that split early and look nothing alike. Roughly 1 in 10,000 gives an identical sibling pair, the same down to the shroomlights. [This page](docs/SIBLINGS.md) explains the difference between siblings and identical siblings, and why they happen.
 
 ### `/stemkit seed`
 
@@ -89,9 +89,11 @@ The glyph trees. Each one is a bone meal tree whose shroomlights spell a single 
 
 Every glyph tree is turned when it's placed so it reads the right way up for the direction you were facing when you ran the command. Face the way you want to walk along the line, run it, then walk under the trees looking up. Lines run away from you.
 
-Fourteen characters share a tree with another one, because the same pattern reads as both depending on which way you look at it: W and M, i and !, H and K, 6 and 9 and so on. That makes 95 characters on 81 trees.
+Fourteen pairs of characters share a tree, because the same pattern reads as both depending on which way you look at it: W and M, i and !, H and K, 6 and 9 and so on. That makes 95 characters on 81 trees.
 
-![The letter A, from the side and from directly underneath](docs/img/a_from_the_side.png)
+The letter A from the side, then from directly underneath:
+
+![The letter A from the side](docs/img/a_from_the_side.png)
 ![The letter A from directly underneath](docs/img/a_from_below.png)
 
 ### `/stemkit message <text>`

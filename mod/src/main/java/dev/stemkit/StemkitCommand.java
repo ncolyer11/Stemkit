@@ -211,6 +211,19 @@ public final class StemkitCommand {
 	 * the player's view, then compared block for block with weeping vines ignored.
 	 */
 	private static int sibling(CommandSourceStack src, BlockPos pos, long s0) {
+		try {
+			return siblingInner(src, pos, s0);
+		} catch (Throwable t) {
+			LOG.error("[stemkit] sibling {} failed", s0, t);
+			StackTraceElement[] st = t.getStackTrace();
+			StringBuilder where = new StringBuilder();
+			for (int i = 0; i < Math.min(st.length, 4); i++) where.append(" < ").append(st[i].getClassName().replaceAll("^.*\\.", "")).append('.').append(st[i].getMethodName()).append(':').append(st[i].getLineNumber());
+			src.sendFailure(Component.literal("Internal error: " + t + where));
+			return 0;
+		}
+	}
+
+	private static int siblingInner(CommandSourceStack src, BlockPos pos, long s0) {
 		pos = Targeting.fit(src, pos, 28);
 		Siblings s = growSiblings(src.getLevel(), pos, GridLayout.facing(src).getClockWise(), s0);
 		if (s.failure() != null) {

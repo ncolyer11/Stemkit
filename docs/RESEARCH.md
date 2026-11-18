@@ -22,7 +22,7 @@ Stand under the tree, look straight up, and you see that layer from below. If th
 
 ### The font
 
-The font is 5x5 pixels per character and was drawn by hand in a small editor page. It covers 95 characters: A to Z, a to z, 0 to 9, the usual punctuation and a blank space. Fourteen of them share a pattern with another (W and M, i and !), so there are 81 different trees in the end.
+The font is 5x5 pixels per character and was drawn by hand in a small editor page. It covers 95 characters: A to Z, a to z, 0 to 9, the usual punctuation and a blank space. Fourteen pairs share a pattern (W and M, i and !), so there are 81 different trees in the end.
 
 A glyph can sit in the canvas in several ways. It can be turned four ways, and glyphs that don't fill the 5x5 can slide around inside it. That gives about 1,100 different shroomlight patterns that count as "one of our glyphs". The sweep looks each tree's canvas up in that table.
 
