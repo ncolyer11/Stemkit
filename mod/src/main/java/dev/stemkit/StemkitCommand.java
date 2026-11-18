@@ -71,6 +71,12 @@ public final class StemkitCommand {
 		root.then(growCmd);
 
 		root.then(Commands.literal("sibling")
+			.executes(c -> {
+				c.getSource().sendSuccess(() -> Component.literal("/stemkit sibling <seed> [pos]").withStyle(ChatFormatting.WHITE), false);
+				c.getSource().sendSuccess(() -> Component.literal("Grows the seed as warped (left) and crimson (right) and compares them, vines ignored. "
+					+ "Seed is a whole number from 0 to 281474976710655. Try 59438334661301 for an identical pair.").withStyle(ChatFormatting.GRAY), false);
+				return 0;
+			})
 			.then(Commands.argument("s0", LongArgumentType.longArg(0L, MASK48))
 				.executes(c -> sibling(c.getSource(), feet(c), LongArgumentType.getLong(c, "s0")))
 				.then(Commands.argument("pos", BlockPosArgument.blockPos())

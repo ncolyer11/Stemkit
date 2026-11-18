@@ -1,5 +1,5 @@
 {
- "modVersion": "1.3.3",
+ "modVersion": "1.3.4",
  "_readme": [
   "Glyph trees for /stemkit char | message (verified warped finds from the glyph sweep).",
   "heading = compass direction to face so the glyph reads upright looking straight up at layer y+layerY; the mod rotates trees to face the player.",

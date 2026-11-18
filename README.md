@@ -4,7 +4,7 @@ A small Fabric mod for Minecraft 26.3 that grows huge Nether fungi from an exact
 
 Every tree is grown by the game's own bone meal code (or its natural worldgen code), using the exact random state that made it. Glyph trees get turned (and the odd punctuation mark shifted) so they sit where they should, and that is the only change the mod makes to a tree.
 
-![Every glyph tree, seen from below](docs/img/glyphs.png)
+![Every glyph tree, from directly under the trunk looking straight up](docs/img/glyphs.png)
 
 ## Install
 

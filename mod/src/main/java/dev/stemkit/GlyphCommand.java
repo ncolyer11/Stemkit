@@ -95,6 +95,12 @@ public final class GlyphCommand {
 		chr.then(allCmd("all_punct", "punctuation"));
 		root.then(chr);
 		root.then(Commands.literal("message")
+			.executes(c -> {
+				c.getSource().sendSuccess(() -> Component.literal("/stemkit message <text>").withStyle(ChatFormatting.WHITE), false);
+				c.getSource().sendSuccess(() -> Component.literal("Spells the text as one straight line of glyph trees running away from you. "
+					+ "Spaces become blank trees, characters with no tree are skipped. Example: /stemkit message hello world").withStyle(ChatFormatting.GRAY), false);
+				return 0;
+			})
 			.then(Commands.argument("text", StringArgumentType.greedyString())
 				.executes(c -> message(c.getSource(), Targeting.defaultPos(c.getSource()), StringArgumentType.getString(c, "text")))));
 	}
